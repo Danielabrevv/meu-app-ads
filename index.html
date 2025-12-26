@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Minha Página com Anúncios</title>
+
+  <!-- SDK Adsterra -->
+  <script src='//libtl.com/sdk.js'
+          data-zone='10378996'
+          data-sdk='show_10378996'></script>
+
+</head>
+<body>
+
+  <h1>Bem-vindo</h1>
+  <p>Conteúdo da página</p>
+
+  <script>
+    show_10378996({
+      type: 'inApp',
+      inAppSettings: {
+        frequency: 2,
+        capping: 0.1,
+        interval: 30,
+        timeout: 5,
+        everyPage: false
+      }
+    });
+  </script>
+
+</body>
+</html>
